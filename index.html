@@ -27,17 +27,41 @@
         </nav>
         <section class="w-full">
           <div class="relative">
-            <div class="h-[50] bg-blue-100">
-              <img class="w-full" src="./Assets/img1.png" alt="img1">
-            </div>
-            <div class="absolute flex h-full w-full top-0 left-0 bg-red-500">
-              <div class="my-auto border w-full flex justify-between">
-                <button class="border-2">
+            <ul id="slider">
+              <li class="relative">
+                <img class="w-full h-full bg-cover" src="./Assets/img1.png" alt="img1">
+              </li>
+              <li class="relative hidden">
+                <img class="w-full h-full bg-cover" src="./Assets/img2.png" alt="img2">
+              </li>
+              <li class="relative hidden">
+                <img class="w-full h-full bg-cover" src="./Assets/img3.png" alt="img3">
+              </li>
+              <li class="relative hidden">
+                <img class="w-full h-full bg-cover" src="./Assets/img4.png" alt="img4">
+              </li>
+              <li class="relative hidden">
+                <img class="w-full h-full bg-cover" src="./Assets/img5.png" alt="img5">
+              </li>
+              <li class="relative hidden">
+                <img class="w-full h-full bg-cover" src="./Assets/img6.png" alt="img6">
+              </li>
+              <li class="relative hidden">
+                <img class="w-full h-full bg-cover" src="./Assets/img7.png" alt="img7">
+              </li>
+              <li class="relative hidden">
+                <img class="w-full h-full bg-cover" src="./Assets/img8.png" alt="img">
+              </li>
+            </ul>
+           
+            <div class="absolute px-5 flex h-full w-full top-0 left-0">
+              <div class="my-auto w-full flex justify-between">
+                <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
                   </svg>                
                 </button>
-                <button class="border-2">
+                <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                   </svg>  
@@ -46,9 +70,7 @@
             </div>
           </div>
         </section>
-        <!-- <div class="container mx-auto px-10">
-          <img class="w-screen h-auto" src="./Assets/img1.png" alt="">
-        </div> -->
     </div>
+   <script src="./index.js"></script>
 </body>
 </html>
